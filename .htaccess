@@ -1,0 +1,17 @@
+<IfModule pagespeed_module>
+ModPagespeed off 
+#        ModPagespeedEnableFilters lazyload_images
+        ModPagespeedEnableFilters extend_cache
+#        ModPagespeedEnableFilters rewrite_images
+        ModPagespeedEnableFilters convert_jpeg_to_webp
+        ModPagespeedEnableFilters collapse_whitespace
+        ModPagespeedEnableFilters combine_javascript
+#        ModPagespeedEnableFilters rewrite_javascript
+        ModPagespeedEnableFilters remove_comments
+        ModPagespeedEnableFilters convert_meta_tags
+        ModPagespeedEnableFilters flatten_css_imports
+        ModPagespeedEnableFilters combine_css
+        ModPagespeedEnableFilters insert_image_dimensions
+#        ModPagespeedEnableFilters rewrite_css,sprite_images
+        ModPagespeedEnableFilters convert_jpeg_to_progressive
+</IfModule>

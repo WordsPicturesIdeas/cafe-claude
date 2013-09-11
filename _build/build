@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd ~/subdomains/cafeclaude/cc-build
+
+lessc ~/subdomains/cafeclaude/cc-build/_less/bootstrap.less > ~/subdomains/cafeclaude/cc-build/css/bootstrap.css
+jekyll build --trace ~/subdomains/cafeclaude/cc-build/

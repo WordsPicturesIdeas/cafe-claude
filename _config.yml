@@ -1,0 +1,4 @@
+name: Cafe Claude
+destination: ~/subdomains/cafeclaude/httpdocs
+include: ['.htaccess']
+#permalink: /:categories/:title/ 
