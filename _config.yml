@@ -1,4 +1,5 @@
 name: Cafe Claude
 destination: ~/subdomains/cafeclaude/httpdocs
 include: ['.htaccess']
+exclude: ['.git']
 #permalink: /:categories/:title/ 
