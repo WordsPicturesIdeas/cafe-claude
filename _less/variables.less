@@ -7,10 +7,12 @@
 // --------------------------------------------------
 // Cafe Claude specific variable definitions:
 
-@pure-gold: #999933;
+@pure-gold: #A58C27;
 @solid-gold: @pure-gold;
-@moon-gray: #999933;
+@moon-gray: #999;
 @moon-grey: @moon-gray;
+@dark-moon: #666;
+@light-moon: #333;
 @opentable-text-color: #fff;
 @opentable-bg-color: #000;
 
@@ -43,7 +45,7 @@
 // Links
 // -------------------------
 
-@link-color:            @brand-primary;
+@link-color:            @solid-gold; /*@brand-primary;*/
 @link-hover-color:      darken(@link-color, 15%);
 
 // Typography
@@ -278,12 +280,12 @@
 // Inverted navbar
 //
 // Reset inverted navbar basics
-@navbar-inverse-color:                      @gray-light;
+@navbar-inverse-color:                      @solid-gold;
 @navbar-inverse-bg:                         #000;
 @navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
-@navbar-inverse-link-color:                 @gray-light;
+@navbar-inverse-link-color:                 @solid-gold;
 @navbar-inverse-link-hover-color:           #fff;
 @navbar-inverse-link-hover-bg:              transparent;
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
@@ -304,9 +306,9 @@
 @navbar-inverse-search-placeholder-color:   #ccc;
 
 // Inverted navbar toggle
-@navbar-inverse-toggle-hover-bg:            #333;
-@navbar-inverse-toggle-icon-bar-bg:         #fff;
-@navbar-inverse-toggle-border-color:        #000;
+@navbar-inverse-toggle-hover-bg:            @light-moon;
+@navbar-inverse-toggle-icon-bar-bg:         @moon-gray;
+@navbar-inverse-toggle-border-color:        @moon-gray;
 
 
 // Navs

@@ -1,3 +1,7 @@
+AddType image/svg+xml svg svgz
+AddEncoding gzip svgz
+
+
 <IfModule pagespeed_module>
 ModPagespeed off 
 #        ModPagespeedEnableFilters lazyload_images

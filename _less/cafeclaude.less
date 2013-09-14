@@ -7,13 +7,94 @@ body{
 	font-family: 'Open Sans', sans-serif;
 }
 .section-title{
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: @moon-grey;
 	font-size: 16px;
+	font-weight: 300;
+	padding-top:20px;
 }
 
 .section-content{
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: @moon-grey;
-	font-size: 16px;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.center{
+	margin:0 auto;
+	float:none;
+}
+
+.opentable-wrapper{
+	.make-row();
+}
+.opentable-widget{
+	.make-lg-column(8);
+	min-height: 200px;
+}
+
+.navbar-toggle {
+	/*background-color: @moon-grey;*/
+}
+
+hr{ 
+	border-top: 1px solid @dark-moon;
+	margin-top: 15px;
+}
+
+.nav > li, .dropdown-menu > li {
+	border-top: 1px solid @moon-grey;
+}
+.navbar-nav > li > a, .dropdown-menu > li > a ,.navbar-nav .open .dropdown-menu > li > a {
+	line-height: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+p{ 
+	line-height:2;
+}
+
+@media (min-width: 480px) {
+	.section-title{
+		padding-top:40px;
+	}
+}
+
+.gift-btn{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.mail-sign-up{
+	color: @solid-gold;
+}
+
+.social-footer{
+	width:25px;
+	height:25px;
+	display:inline-block;
+}
+
+#fb-footer{
+	background-repeat: none;
+	background-image: url("/img/facebook-icon-gold.svg");
+	&:hover{
+		background-image: url("/img/facebook-icon-white.svg");
+	}
+}
+#twitter-footer{
+	background-repeat: none;
+	background-image: url("/img/twitter-icon-gold.svg");
+	&:hover{
+		background-image: url("/img/twitter-icon-white.svg");
+	}
+}
+#yelp-footer{
+	background-repeat: none;
+	background-image: url("/img/yelp-icon-gold.svg");
+	&:hover{
+		background-image: url("/img/yelp-icon-white.svg");
+	}
 }

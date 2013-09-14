@@ -15,26 +15,25 @@
         <li class="dropdown">
           <a href="/downtown/" class="dropdown-toggle" data-toggle="dropdown">DOWNTOWN <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="/downtown/menus/">Menus</a></li>
-            <li><a href="/downtown/map/">Map</a></li>
-            <li><a href="/downtown/music/">Music</a></li>
-            <li><a href="/downtown/contact/">Contact</a></li>
+            <li class="{% if page.menuEntry == "downtown-menus" %}active {% endif %}"><a href="/downtown/menus/">Menus</a></li>
+            <li class="{% if page.menuEntry == "downtown-map" %}active {% endif %}"><a href="/downtown/map/">Map</a></li>
+            <li class="{% if page.menuEntry == "downtown-music" %}active {% endif %}"><a href="/downtown/music/">Music</a></li>
+            <li class="{% if page.menuEntry == "downtown-contact" %}active {% endif %}"><a href="/downtown/contact/">Contact</a></li>
           </ul>
         </li>
 
         <li class="dropdown">
           <a href="/marina/" class="dropdown-toggle" data-toggle="dropdown">MARINA <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="/marina/menus/">Menus</a></li>
-            <li><a href="/marina/map/">Map</a></li>
-            <li><a href="/marina/music/">Music</a></li>
-            <li><a href="/marina/contact/">Contact</a></li>
+            <li class="{% if page.menuEntry == "marina-menus" %}active {% endif %}"><a href="/marina/menus/">Menus</a></li>
+            <li class="{% if page.menuEntry == "marina-map" %}active {% endif %}"><a href="/marina/map/">Map</a></li>
+            <li class="{% if page.menuEntry == "marina-music" %}active {% endif %}"><a href="/marina/music/">Music</a></li>
+            <li class="{% if page.menuEntry == "marina-contact" %}active {% endif %}"><a href="/marina/contact/">Contact</a></li>
           </ul>
         </li>
 
-        <li><a href="/gift-card/">BUY GIFT CARD</a></li>
-        <li><a href="/contact/">CONTACT</a></li>
-        <li><a href="/share/">SHARE</a></li>
+        <li class="{% if page.menuEntry == "giftcard" %}active {% endif %}"><a href="https://secure.treatful.com/buy/Cafe-Claude?ref=1">BUY GIFT CARD</a></li>
+        <li class="{% if page.menuEntry == "contact" %}active {% endif %}"><a href="/contact/">CONTACT</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>

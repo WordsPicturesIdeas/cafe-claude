@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
    	<link href='/css/bootstrap.css' rel='stylesheet' type='text/css'>
-    <link href="/css/feed_alt.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
    	<div class="container">
@@ -29,10 +28,30 @@
         		<p class="text-center section-title">{{page.title}}</p>
         		<hr>
       		</div>
-      		{{ content }}
+		<section id="calendar">
+
+		<div class="col-xs-12 col-md-offset-2 col-md-12">
+			<p>September 2013 Schedule&nbsp;&nbsp;|&nbsp;&nbsp;All acts perform 7:30pm - 10:30pm</p>
+		</div>
+		<div class="multi-column-layout">
+			{{page.acts.size / 2}}
+		 {% for act in page.acts %}
+    			<p><time datetime="{{act.date}}" class="section-title">{{act.date | date: " %A, %B %d"}}</time><br>
+    			<span class="section-content">{{act.artist}}</span></p>
+			{% assign midway = page.acts.size | divided_by: 2 %}
+			{% if forloop.index ==  midway %}
+			</div><div class="multi-column-layout">
+			{% endif %}
+  		{% endfor %}
+		</div>
+		</section>
     	  </div>
     	 </div>
     </div>
     {% include scripts.html %}
   </body>
 </html>
+
+
+1){{  page.acts.size }}<br>
+2) {{ page.acts.size | divided_by: 2 }}
