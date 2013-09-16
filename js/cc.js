@@ -17,4 +17,5 @@ $(document).ready(function() {
 		              
 		// $("#floral-object").css("background", "url("+ socialIcons + 'floral-object.png' + ") no-repeat -80px 0");
 	}
+  	$('.OT_feedTitle').text('Make a Reservation');
 });
