@@ -1,6 +1,14 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_HOST} ^www\.cafeclaude\.com$ [NC]
+    RewriteRule ^(.*)$ http://cafeclaude.com/$1 [L,R=301]
+</IfModule>
+
 AddType image/svg+xml svg svgz
 AddEncoding gzip svgz
 
+Header add X-Creator: "Created by Words Pictures Ideas"
+Header set Connection keep-alive
 
 <IfModule pagespeed_module>
 ModPagespeed off 
@@ -19,3 +27,7 @@ ModPagespeed off
 #        ModPagespeedEnableFilters rewrite_css,sprite_images
         ModPagespeedEnableFilters convert_jpeg_to_progressive
 </IfModule>
+
+
+Redirect /downtown/ /downtown/menus/
+Redirect /marina/ /marina/menus/
