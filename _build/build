@@ -1,6 +1,24 @@
 #!/bin/sh
+#increase permissions on existing generated files.
+rm -rf ~/subdomains/cafeclaude/httpdocs
+mkdir -p ~/subdomains/cafeclaude/httpdocs/
+cd ~/subdomains/cafeclaude/httpdocs/
+find . -type f -exec chmod 640 {} \;
 
 cd ~/subdomains/cafeclaude/cc-build
 
+
 lessc ~/subdomains/cafeclaude/cc-build/_less/bootstrap.less > ~/subdomains/cafeclaude/cc-build/css/c.css
 jekyll build --trace ~/subdomains/cafeclaude/cc-build/
+#reduce file permissions to their minimum
+cd ~/subdomains/cafeclaude/httpdocs
+find . -type f -exec chmod 444 {} \;
+
+#create a git repo on the output
+git init
+git add .
+git commit -m "Tripwire repo"
+
+
+#send the files to their final destination
+echo "Copy to final destination"
