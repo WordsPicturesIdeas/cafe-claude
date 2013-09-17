@@ -6064,6 +6064,20 @@ p {
 .mail-sign-up {
   color: #a58c27;
 }
+.content-main h3,
+.content-main p {
+  font-size: 14px;
+  color: #666666;
+  margin-top: 0;
+  font-weight: 300;
+}
+.map {
+  margin-bottom: 20px;
+}
+p.front-header {
+  font-weight: 600;
+}
+/* Social icon related styles. */
 .social-footer {
   width: 25px;
   height: 25px;
@@ -6090,21 +6104,8 @@ p {
 #yelp-footer:hover {
   background-image: url("/img/yelp-icon-white.svg");
 }
-/* Main Content */
-.content-main h3 {
-  font-size: 14px;
-  color: #666666;
-  margin-top: 0;
-}
-.content-main h3,
-.content-main p {
-  font-weight: 300;
-}
-.map {
-  margin-bottom: 20px;
-}
-p.front-header {
-  font-weight: 600;
+footer {
+  margin-top: 40px;
 }
 #OT_searchWrapperAll {
   width: 100%;

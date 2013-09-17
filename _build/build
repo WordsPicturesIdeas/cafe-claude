@@ -2,5 +2,5 @@
 
 cd ~/subdomains/cafeclaude/cc-build
 
-lessc ~/subdomains/cafeclaude/cc-build/_less/bootstrap.less > ~/subdomains/cafeclaude/cc-build/css/bootstrap.css
+lessc ~/subdomains/cafeclaude/cc-build/_less/bootstrap.less > ~/subdomains/cafeclaude/cc-build/css/c.css
 jekyll build --trace ~/subdomains/cafeclaude/cc-build/

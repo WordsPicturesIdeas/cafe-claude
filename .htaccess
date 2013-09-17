@@ -9,6 +9,8 @@ AddEncoding gzip svgz
 
 Header add X-Creator: "Created by Words Pictures Ideas"
 Header set Connection keep-alive
+Header unset ETag
+FileETag None
 
 <IfModule pagespeed_module>
 ModPagespeed off 
@@ -28,6 +30,3 @@ ModPagespeed off
         ModPagespeedEnableFilters convert_jpeg_to_progressive
 </IfModule>
 
-
-Redirect /downtown/ /downtown/menus/
-Redirect /marina/ /marina/menus/
