@@ -12,13 +12,14 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
+        <li><a href="#opentable" data-toggle="collapse" data-target=".navbar-collapse">RESERVATIONS</a></li>
         <li class="dropdown">
           <a href="/downtown/" class="dropdown-toggle" data-toggle="dropdown">DOWNTOWN <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li class="{% if page.menuEntry == "downtown-menus" %}active {% endif %}"><a href="/downtown/menus/">Menus</a></li>
             <li class="{% if page.menuEntry == "downtown-map" %}active {% endif %}"><a href="/downtown/map/">Map</a></li>
             <li class="{% if page.menuEntry == "downtown-music" %}active {% endif %}"><a href="/downtown/music/">Music</a></li>
-            <li class="{% if page.menuEntry == "downtown-contact" %}active {% endif %}"><a href="/downtown/contact/">Contact</a></li>
+            <li class="{% if page.menuEntry == "downtown-contact" %}active {% endif %}"><a href="/downtown/hours/">Hours</a></li>
           </ul>
         </li>
 
@@ -27,7 +28,7 @@
           <ul class="dropdown-menu">
             <li class="{% if page.menuEntry == "marina-menus" %}active {% endif %}"><a href="/marina/menus/">Menus</a></li>
             <li class="{% if page.menuEntry == "marina-map" %}active {% endif %}"><a href="/marina/map/">Map</a></li>
-            <li class="{% if page.menuEntry == "marina-contact" %}active {% endif %}"><a href="/marina/contact/">Contact</a></li>
+            <li class="{% if page.menuEntry == "marina-contact" %}active {% endif %}"><a href="/marina/hours/">Hours</a></li>
           </ul>
         </li>
 

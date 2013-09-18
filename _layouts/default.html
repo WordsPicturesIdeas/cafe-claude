@@ -2,26 +2,18 @@
   <body>
    	<div class="container">
       {% include navigation.html %}
-    	<div class="row">
-    	  <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-          {% include opentable-widget.html %}
-    	  </div>
-    	  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
-          {% include cafe-claude-logo.html %}
-    	  </div>
-    	</div>
-    	
-    	<div class="row">
-    	  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 col-sm-offset-3 col-md-offset-3 col-lg-offset-3 content-main">
-        		<p class="text-center section-title">{{page.title}}</p>
-        		<hr>
+			<div class="row body-content">
+    	 <div class="content-main">
+					 {% include cafe-claude-logo.html %}
+       		<p class="text-center section-title " id="page-title">{{page.title}}</p>
+       		<hr>
+     		{{ content }}         
+   	  </div> <!-- content-main -->
 
-      		{{ content }}
-          
-    	  </div>
-    	</div>
-      <div class="row">
-        {% include social.html %}
-      </div>
-    </div>
+				<div class="content-sidebar">
+					{% include opentable-widget.html %}			
+					{% include social.html %}
+			</div>
+   	</div> <!-- end row -->
+
 {% include footer.html %}

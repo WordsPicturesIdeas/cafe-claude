@@ -2,24 +2,16 @@
 <body>
 	<div class="container">
 		{% include navigation.html %}
-		<div class="row">
-			<div class="col-xs-12 col-md-3">
-				{% include opentable-widget.html %}
-
-			</div>
-			<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
-				{% include cafe-claude-logo.html %}
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 col-sm-offset-3 col-md-offset-3 col-lg-offset-3 content-main">
-				<p class="text-center section-title">{{page.title}}</p>
+		<div class="row body-content">
+			<div class="content-main">
+				 {% include cafe-claude-logo.html %}
+				<p class="text-center section-title " id="page-title">{{page.title}}</p>
 				<hr>
-
 				<section id="calendar">
-					<h3>September 2013 Schedule&nbsp;&nbsp;|&nbsp;&nbsp;All acts perform 7:30pm - 10:30pm</h3>
-					<br>
+					<div class="row">
+						<h3 class="col-md-offset-2 col-md-10">{{ page.eventMonth }} </h3>
+						<br>
+					</div>
 					<div class="row">
 						<div class="multi-column-layout">
 							{% for act in page.acts %}
@@ -28,18 +20,19 @@
 							<br>
 							{% assign midway = page.acts.size | divided_by: 2 %}
 							{% if forloop.index ==  midway %}
-						</div><div class="multi-column-layout">
+								</div>
+								<div class="multi-column-layout">
 							{% endif %}
 							{% endfor %}
-						</div>
-
-					</div>
-
+						</div> <!-- end multi-column-layout -->
+					</div> <!-- end row -->
 				</section>
+			</div> <!-- end content-main -->
+			
+			<div class="content-sidebar">
+					{% include opentable-widget.html %}			
+					{% include social.html %}
 			</div>
-		</div>
-		<div class="row">
-			{% include social.html %}
-		</div>
-	</div>
+			
+		</div> <!-- end row -->
 {% include footer.html %}

@@ -8,6 +8,7 @@ body{
 	font-weight: 600;
 	padding-left: 20px;
 }
+
 .section-title{
 	font-family: 'Open Sans', sans-serif;
 	color: @moon-grey;
@@ -28,27 +29,12 @@ body{
 	float:none;
 }
 
-/* Open Table Widget */
-.opentable-wrapper{
-	.make-row();
-}
-.opentable-widget{
-	.make-lg-column(8);
-	min-height: 200px;
-}
-
-.navbar-toggle {
-	/*background-color: @moon-grey;*/
-}
-
 hr{ 
 	border-top: 1px solid @dark-moon;
 	margin-top: 15px;
 }
 
-.nav > li, .dropdown-menu > li {
-	border-top: 1px solid @moon-grey;
-}
+
 .navbar-nav > li > a, .dropdown-menu > li > a ,.navbar-nav .open .dropdown-menu > li > a {
 	line-height: 30px;
 	padding-top: 10px;
@@ -63,12 +49,32 @@ p{
 	padding-top:30px;
 }
 
+@media (max-width: @screen-sm) {
+	.navbar-nav{
+		background-color: @menu-bg;
+	}
+	.nav > li, .dropdown-menu > li {
+		border-top: 1px solid @moon-grey;
+	}
+}
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+	.body-content{
+		padding-top: 40px;
+	}
+}
+
 @media (min-width: 480px) {
 	.section-title{
 		padding-top:40px;
 	}
 	.cafe-logo{
 		padding-top:60px;
+	}
+}
+
+@media (min-width: @screen-sm-max){
+	.content-sidebar{
+		border-right: 1px solid @dark-moon;
 	}
 }
 
@@ -85,9 +91,12 @@ p{
 .content-main{ 
 	h3, p{
 		font-size: @font-size-base;
-		color: @dark-moon;
+		color: @moon-grey;
 		margin-top: 0;
 		font-weight: 300;
+	}
+	h3{
+		line-height: 2;
 	}
 }
 .map {
@@ -100,6 +109,9 @@ p.front-header{
 
 
 /* Social icon related styles. */
+#social-images{
+	margin-bottom:20px;
+}
 .social-footer{
 	width:25px;
 	height:25px;
@@ -130,4 +142,8 @@ p.front-header{
 
 footer {
 	margin-top: 40px;
+}
+
+#page-title{
+	font-size:@font-size-large;
 }
