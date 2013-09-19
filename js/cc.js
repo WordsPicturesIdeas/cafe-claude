@@ -28,11 +28,4 @@ $(document).ready(function() {
 	removeChar('#OT_timeLbl', ':');
 	removeChar('#OT_restaurantLbl', ':');
 	
-	if(Modernizr.touch) {
-		$('#primary-nav').removeClass('nav-stacked').addClass('navbar-nav');
-	}else{
-		// $('#primary-nav').removeClass('navbar-nav').addClass('nav-stacked');
-	}
-	
-	
 });
