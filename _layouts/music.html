@@ -15,8 +15,8 @@
 					<div class="row">
 						<div class="multi-column-layout">
 							{% for act in page.acts %}
-							<h3><time datetime="{{act.date}}" >{{act.date | date: " %A, %B %d"}}</time></h3>
-							<p><span class="section-content">{{act.artist}}</span></p>
+							<h3 class="act-date"><time datetime="{{act.date}}" >{{act.date | date: " %A, %B %d"}}</time></h3>
+							<p><span class="section-content act-artist">{{act.artist}}</span></p>
 							<br>
 							{% assign midway = page.acts.size | divided_by: 2 %}
 							{% if forloop.index ==  midway %}

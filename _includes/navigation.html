@@ -16,7 +16,7 @@
         <li class="dropdown">
           <a href="/downtown/" class="dropdown-toggle" data-toggle="dropdown">DOWNTOWN <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li class="{% if page.menuEntry == "downtown-menus" %}active {% endif %}"><a href="/downtown/menus/">Menus</a></li>
+            <li class="{% if page.menuEntry == "downtown-menus" %}active {% endif %}"><a href="https://www.menumodo.com/app.php/viewer/index/898">Menus</a></li>
             <li class="{% if page.menuEntry == "downtown-map" %}active {% endif %}"><a href="/downtown/map/">Map</a></li>
             <li class="{% if page.menuEntry == "downtown-music" %}active {% endif %}"><a href="/downtown/music/">Music</a></li>
             <li class="{% if page.menuEntry == "downtown-contact" %}active {% endif %}"><a href="/downtown/hours/">Hours</a></li>
@@ -26,13 +26,18 @@
         <li class="dropdown">
           <a href="/marina/" class="dropdown-toggle" data-toggle="dropdown">MARINA <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li class="{% if page.menuEntry == "marina-menus" %}active {% endif %}"><a href="/marina/menus/">Menus</a></li>
+            <li class="{% if page.menuEntry == "marina-menus" %}active {% endif %}"><a href="http://www.menumodo.com/app.php/viewer/index/10986">Menus</a></li>
             <li class="{% if page.menuEntry == "marina-map" %}active {% endif %}"><a href="/marina/map/">Map</a></li>
             <li class="{% if page.menuEntry == "marina-contact" %}active {% endif %}"><a href="/marina/hours/">Hours</a></li>
           </ul>
         </li>
-
-        <li class="{% if page.menuEntry == "giftcard" %}active {% endif %}"><a href="https://secure.treatful.com/buy/Cafe-Claude?ref=1">BUY GIFT CARD</a></li>
+				<li class="dropdown">
+					<a href="/giftcard/" class="dropdown-toggle" data-toggle="dropdown">BUY GIFT CARD <b class="caret"></b></a>
+					 <ul class="dropdown-menu">
+            <li class="giftcard-downtown"><a href="https://secure.treatful.com/buy/Cafe-Claude?ref=1">Downtown</a></li>
+						<li class="giftcard-marina"><a href="https://www.treatful.com/buy/Cafe-Claude---Marina?ref=1">Marina</a></li>
+					</ul>
+				</li>
         <li class="{% if page.menuEntry == "contact" %}active {% endif %}"><a href="/contact/">CONTACT</a></li>
       </ul>
     </div><!--/.nav-collapse -->

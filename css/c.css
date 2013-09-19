@@ -4072,7 +4072,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   background-color: #333333;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
-  background-color: #999999;
+  background-color: #cccccc;
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
@@ -6039,14 +6039,14 @@ body {
 }
 .section-title {
   font-family: 'Open Sans', sans-serif;
-  color: #999999;
+  color: #cccccc;
   font-size: 16px;
   font-weight: 300;
   padding-top: 20px;
 }
 .section-content {
   font-family: 'Open Sans', sans-serif;
-  color: #999999;
+  color: #cccccc;
   font-size: 14px;
   font-weight: 300;
 }
@@ -6077,7 +6077,7 @@ p {
   }
   .nav > li,
   .dropdown-menu > li {
-    border-top: 1px solid #999999;
+    border-top: 1px solid #cccccc;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -6095,7 +6095,8 @@ p {
 }
 @media (min-width: 991px) {
   .content-sidebar {
-    border-right: 1px solid #666666;
+    /*border-right: 1px solid @dark-moon;*/
+  
   }
 }
 .gift-btn {
@@ -6108,7 +6109,7 @@ p {
 .content-main h3,
 .content-main p {
   font-size: 14px;
-  color: #999999;
+  color: #cccccc;
   margin-top: 0;
   font-weight: 300;
 }
@@ -6156,6 +6157,12 @@ footer {
 }
 #page-title {
   font-size: 18px;
+}
+.act-date {
+  margin-bottom: 0;
+}
+.act-artist {
+  color: #a58c27;
 }
 #opentable-anchor {
   height: 50px;
@@ -6381,11 +6388,11 @@ footer {
   margin: 0;
   width: 155px;
   border-radius: 6px;
-  background-color: #999999;
+  background-color: #cccccc;
 }
 #OT_searchWrapper #dateDisplay {
   font-size: 10px;
-  color: #999;
+  color: #cccccc;
   font-family: 'Open Sans', sans-serif;
   float: right;
   margin: 0 10px 0 0;
