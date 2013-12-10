@@ -2,4 +2,5 @@ name: Cafe Claude
 destination: ~/dev.cafeclaude.com
 include: ['.htaccess']
 exclude: ['.git']
+siteurl: "http://cafeclaude.com"
 #permalink: /:categories/:title/ 
